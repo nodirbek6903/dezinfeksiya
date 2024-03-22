@@ -1,0 +1,65 @@
+{
+    "nav-item1": "Asosiy",
+    "nav-item2": "Biz haqimizda",
+    "nav-item3": "Xizmatlar",
+    "nav-item4": "Bog'lanish",
+    "nav-button": "Aloqa",
+
+    "main-title": "Dezinfektsiya xizmati",
+    "main-description": "Biz Toshkentda 10 yildan beri professional dezinfeksiya ishlarini olib boramiz, shuning uchun birinchi marta zararkunandalardan qanday qutulishni bilamiz.",
+    "main-button": "Aloqa",
+
+    "about-title":"Biz haqimizda",
+    "about-items-title":"Tez xizmat",
+    "about-items-description":"MUROJAATLAR 24 SOAT QABUL ETILADI. AGAR MUAMMO SHOSCHILIK BO'LSA, DAROVDA KETISHIMIZ MUMKIN. SIFATI A'LO DARAJADA QOLMOQDA.",
+    "about-items-title2":"Tajribali Mutaxassislarimiz",
+    "about-items-description2":"BIZNING XODIMIZ HAMMA NIMANI QILADI: BUXG'ALT HISOBI, XONADA TAYYORLASH, QAYTA ISHLAB CHIQISH, YANGILIK TOZALASH, VENTILYATSIYA VA TEKSHIRISH.",
+    "about-items-title3":"Sizning qulayligingizda",
+    "about-items-description3":"SIZ UCHUN MUVOFIQ VA Qulay VAQTNI TANLANG VA BIZ BILAN BOG'LANING. BIZ SIZGA KAFOLATLI VA SAMARALI NATIJALARNI BERAMIZ.",
+
+    "about-card2-title":"Xatolar va zararli hasharotlarni boshqa hisoblamang!!!",
+    "about-card2-description":"Uzoq yillardan buyon faoliyat yuritib kelayotgan korxonamiz bizdan mamnun.",
+
+    "about-card2-button":"Aloqa",
+
+    "xiz-title":"Xizmatlar",
+    "xiz-description":"Biz sizga samarali va kafolatlangan xizmatni taqdim etamiz.",
+
+    "xiz-card1-title":"Dezinfektsiya - zararli mikroorganizmlarni yo'q qilish",
+    "xiz-card1-description":"Har qanday dezinfeksiyaning asosiy vazifasi infektsiyalar va kasalliklarga olib kelishi mumkin bo'lgan xavfli mikroorganizmlarni yo'q qilishdir. Dezinfektsiya choralari bo'shliqni mog'or, viruslar, chiriyotgan va bakteriyalardan tozalaydi. Jarayon patogen organizmlardan atrof-muhitni tozalaydi.Agar o'zingizni yomon his qilsangiz, charchagan yoki hech qanday sababsiz zaiflashsangiz, dezinfektsiyalash vositalarini chaqirishingiz kerak.",
+    "xiz-card2-title":"Dezinfeksiya - hasharotlarni yo'q qilish",
+    "xiz-card2-description":"Ko'p odamlar birinchi navbatda 'dezinfestatsiya' so'zini istalmagan qo'shnilaridan - choyshablar, hamamböcekler, chumolilar va boshqa hasharotlardan xalos bo'lish yo'lini qidirganda duch kelishadi. Ularning o'zlari yoqimsiz va ular ham ma'lum infektsiya tashuvchilari. Dezinseksiya - bu hasharotlarni: chivinlar, chivinlar, choyshablar, tarakanlar, kuya, shomil, qobiq qo'ng'izlari, yog'och bitlari va boshqa sudralib yuruvchi va uchuvchi narsalarni yo'q qilish. Deratizatsiya bilan bir qatorda davolash sovuq va issiq tuman generatorlarini, shuningdek professional insektitsidlarni o'z ichiga olgan maxsus vositalar yordamida amalga oshiriladi.",
+    "xiz-card3-title":"Deratizatsiya - kemiruvchilarni yo'q qilish.",
+    "xiz-card3-description":"Toshkentda deratizatsiya kemiruvchilarni yo'q qilishga qaratilgan kompleks chora-tadbirlarning butun majmuasidir. Ma'lumki, kemiruvchilar juda qattiq jonzotlar bo'lib, ular turli xil xavfli ta'sirlarga dosh beradilar. Shuning uchun ularni yo'q qilish uchun bir qator usullardan foydalanish kerak. Deratizatsiya Toshkent shahrida kemiruvchilar paydo bo'lgan joyda amalga oshiriladi: ko'p qavatli uylar, omborlar, do'konlar, umumiy ovqatlanish korxonalari, shaxsiy uylar va shaxsiy tomorqalar.",
+
+    "xiztur-title":"Xizmat turi",
+    "xiztur-card1-title":"XATOLAR",
+    "xiztur-card1-description":"Ular to'shakda, yumshoq mebelda, to'qimachilikda, eshik romlari va deraza romlari ostida yashaydilar. Ular odamlar va issiq qonli hayvonlarning qoni bilan oziqlanadi. Ular allergiya va og'ir psixologik noqulaylikni qo'zg'atadi ...",
+    "xiztur-card-button":"Aloqa",
+    "xiztur-card2-title":"TARAKANLAR",
+    "xiztur-card2-description":"Ular patogenlarni olib yuradilar. Ular yoriqlarda, taglik tagida, mebel orqasida, hammom ostida, shkaf ostida va hokazolarda yashaydilar. Ular oziq-ovqat, maishiy chiqindilar, charm buyumlar, qog'oz...",
+    "xiztur-card3-title":"CHAYON",
+    "xiztur-card3-description":"Hasharotlar va araxnidlar bilan oziqlanadigan issiqlikni yaxshi ko'radigan jonzotlar. Ular omborlarda va uylarda yashashlari mumkin, lekin ko'pincha ular yog'och binolarda topiladi ...",
+    "xiztur-card4-title":"KEMIRUVCHILAR",
+    "xiztur-card4-description":"Eng keng tarqalgan kalamushlar va sichqonlar. Ular patogenlarni olib yuradi, barcha sirtlarda ishlaydi, devor va shiftlarda o'tish joylarini yaratadi, strukturaning ishonchliligini pasaytiradi. Ular oziq-ovqat va maishiy chiqindilar bilan oziqlanadi...",
+    "xiztur-card5-title":"BURGA",
+    "xiztur-card5-description":"Ular uy hayvonlari tanasiga kirib, qo'shnilardan ko'chib ketishadi. Ular yumshoq mebellar, ko'rpa-to'shaklar, gilamlar, yumshoq o'yinchoqlar, taglik tagida va deraza va eshik romlarida yashaydilar. Ular odamlar va hayvonlarning qoni bilan oziqlanadi. Ular kasalliklarga olib keladi ...",
+
+    "xiztur-form":"Rasmiy kafolat - 1 yil. Biz jismoniy va yuridik shaxslarga xizmat ko'rsatamiz. Xizmatlar litsenziyalangan!!!",
+
+    "faq-title":"Bog'lanish",
+
+    "faq-question-1":"Zararkunandalarni yo'q qilish qanday amalga oshiriladi?",
+    "faq-answer-1":"Maxsus asbob-uskunalar yordamida insektitsidlar aerozolli tumanga aylanadi va devor qog'ozi, devorlar va taxta plitalari orasidagi eng kichik bo'shliqlarga, ko'zga ko'rinmas hasharotlar uchun potentsial 'yashirish joylari' ga kiradi.",
+    "faq-question-2":"Siz foydalanadigan dorilar xavflimi?",
+    "faq-answer-2":"Preparatlar odamlar, uy hayvonlari va o'simliklar uchun xavfli emas. Ammo davolanishdan keyin xonani 40 daqiqa davomida ventilyatsiya qilish kerak.",
+    "faq-question-3":"Menga uyimni davolanishga tayyorlashning qandaydir usuli kerakmi?",
+    "faq-answer-3":"Asosan, idish-tovoq va shaxsiy gigiena vositalarini izolyatsiya qilishingiz kerak. Davolash paytida uy hayvonlari ham izolyatsiya qilinishi kerak. Mebel yoki maishiy texnikani ko'chirishga hojat yo'q.",
+
+    "faq-form-title":"Ma'lumotlaringizni qoldiring",
+    "faq-form-placeholder":"Sizning ismingiz",
+    "faq-form-button":"Jo'natish",
+
+    "footer-message-1":"O'zbekiston, Toshkent shahri",
+    "footer-message-2":"+998 99 119 99 33, Toshkent"
+}

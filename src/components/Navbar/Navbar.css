@@ -1,0 +1,134 @@
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999999;
+}
+.logo-container{
+    width: 200px;
+    height: 60px;
+}
+.nav-button{
+    margin-left: 10px;
+}
+.logo-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bars-icon{
+    display: none;
+}
+.item-container{
+    width: 50%;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-items a{
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+.language-items{
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .logo-container{
+        width: 160px;
+        height: 40px;
+    }
+    .nav-items a{
+        font-size: 20px;
+    }
+    .nav-container{
+        padding: 10px;
+    }
+    .language-items{
+        font-size: 20px;
+    }
+    .item-container{
+        width: 100%;
+    }
+    .nav-button button{
+        padding: 5px 20px;
+    }
+}
+@media screen and (max-width:480px) {
+    .nav-items{
+        display: none;
+    }
+    .mobile-nav{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: grid;
+        background-color: #fff;
+        width: 180px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    }
+    .mobile-nav a{
+        text-decoration: none;
+        font-size: 20px;
+        display: block;
+        padding: 30px;
+        color: #616A6B ;
+    }
+    .mobile-nav a:first-child{
+        margin-top: 30px;
+    }
+    .mob-btn{
+        margin: 10px auto;
+    }
+    .item-container{
+        width: 50%;
+    }
+    .bars-icon{
+        display: block;
+        font-size: 30px;
+        right: 10px;
+        position: absolute;
+        z-index: 999;
+        color: #000;
+    }
+    .nav-button{
+        display: none;
+    }
+    @media screen and (max-width:380px) {
+        .nav-items a{
+            font-size: 15px;
+        }
+        .nav-items{
+            width: 150px;
+        }
+        .bars-icon{
+            font-size: 25px;
+        }
+        .language-items{
+            font-size: 15px;
+        }
+        .logo-container{
+            width: 150px;
+            height: 30px;
+        }
+    }
+}
