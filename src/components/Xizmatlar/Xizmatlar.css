@@ -50,6 +50,36 @@
     font-size: 1.5rem;
     color: #555;
 }
+@media screen and (max-width:1024px) {
+    .xiz-title h1{
+        font-size: 3.5rem;
+    }
+    .xiz-title p{
+        font-size: 1.3rem;
+        width: 40%;
+    }
+    .xiz-cards .xiz-card .card-image{
+        height: 100%;
+        width: 30%;
+    }
+    .xiz-card .card-items{
+        width: 70%;
+    }
+    .xiz-card .card-items h1{
+        font-size: 1.7rem;
+    }
+    .xiz-card .card-items p{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:960px) {
+    .xiz-card{
+        flex-direction: column;
+    }
+    .xiz-card .card-items{
+        width: 100%;
+    }
+}
 @media screen and (max-width:768px) {
     .xiz-cards{
         grid-template-columns: 1fr;
@@ -58,7 +88,7 @@
         width: 100%;
         display: grid;
     }
-    .xiz-card .card-image{
+    .xiz-cards .xiz-card .card-image{
         width: 150px;
         height: 150px;
         margin: 0 auto;
@@ -66,10 +96,10 @@
     .card-items{
         width: 100%;
     }
-    .card-items h1{
+    .xiz-card .card-items h1{
         font-size: 1.8rem;
     }
-    .card-items p{
+    .xiz-card .card-items p{
         font-size: 1.2rem;
     }
     .xiz-title h1{
@@ -90,25 +120,33 @@
     .xiz-card{
         padding: 10px;
     }
-    .card-items h1{
+    .xiz-card .card-items h1{
         font-size: 1.5rem;
     }
-    .card-items p{
+    .xiz-card .card-items p{
         font-size: 1rem;
     }
 }
 @media screen and (max-width:380px) {
+    .xiz-cards .xiz-card .card-image{
+        width: 50%;
+    }
+    .xiz-card .card-items{
+        width: 100%;
+    }
     .xiz-title h1{
         font-size: 2rem;
+        width: 100%;
     }
     .xiz-title p{
         width: 100%;
         font-size: 1.2rem;
     }
-    .card-items h1{
+    .xiz-card .card-items h1{
         font-size: 1.2rem;
+        width: 100%;
     }
-    .card-items p{
+    .xiz-card .card-items p{
         font-size: 1rem;
     }
 }

@@ -1,13 +1,14 @@
 import React from "react";
 import "./XizmatTuri.css";
-import Hasharot from "../../images/hasharot3.webp";
 import Odamlar from "../../images/odamlar.webp";
+import XizTurIcon from "../../images/xiztur-icon.svg";
 import { CiCircleCheck } from "react-icons/ci";
 import { useTranslation } from "react-i18next";
-import Image4 from "../../images/RODENTS.jpg"
+import Image1 from "../../images/Klopi.jpg";
+import Image4 from "../../images/sichqon.jpg"
 import Image3 from "../../images/scorpion.jpg"
 import Image2 from "../../images/tarakan.jpg"
-import Image5 from "../../images/dez-1.jpg"
+import Image5 from "../../images/burga.webp"
 
 const XizmatTuri = () => {
 
@@ -33,7 +34,7 @@ const XizmatTuri = () => {
           <div className="card-image-btn">
             <button>{t("xiztur-card-button")}</button>
             <div className="card-image">
-              <img src={Hasharot} alt="" />
+              <img src={Image1} alt="" />
             </div>
           </div>
         </div>
@@ -116,7 +117,7 @@ const XizmatTuri = () => {
         </div>
         <div className="card2-items">
           <div className="card2-title">
-          <CiCircleCheck className="card2-icon" />
+          <img src={XizTurIcon} alt="Icons" className="card2-icon"  />
           <span>
             {t("xiztur-form")}
           </span>

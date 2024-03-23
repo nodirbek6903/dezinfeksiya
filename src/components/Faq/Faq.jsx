@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Faq.css";
 import { IoArrowDownOutline, IoArrowUpOutline } from "react-icons/io5";
-import FaqImage from "../../images/dez-2.jpg"
+import FaqImage from "../../images/rasm-about.webp"
 import { useTranslation } from "react-i18next";
 
 const Faq = () => {
@@ -81,9 +81,9 @@ const Faq = () => {
         <div className="faq-cards">
           {faqItems.map((item) => (
             <div className="faq-card" key={item.id}>
-              <div className="faq-questions">
+              <div className="faq-questions" onClick={() => handleToggle(item.id)}>
                 <h2>{item.question}</h2>
-                <div className="icons" onClick={() => handleToggle(item.id)}>
+                <div className="icons" >
                   {openId === item.id ? (
                     <IoArrowUpOutline className="icon" />
                   ) : (

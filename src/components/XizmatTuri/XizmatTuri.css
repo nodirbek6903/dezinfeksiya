@@ -8,13 +8,13 @@
 }
 .xiz-tur-cards{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     gap: 2rem;
     /* justify-content: space-between; */
 }
 .xiz-tur-card{
-    width: 400px;
+    width: 100%;
     display: grid;
     gap: 1rem;
     padding: 20px 10px;
@@ -22,7 +22,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background-color: #ffffff;
     padding: 20px;
-    /* margin: 0 auto; */
+    margin: 0 auto;
 }
 .xiz-tur-card:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
@@ -36,8 +36,8 @@
     align-items: flex-end;
 }
 .xiz-tur-card .card-image-btn .card-image{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
 }
 .xiz-tur-card .card-image-btn .card-image img{
     width: 100%;
@@ -46,17 +46,17 @@
 }
 .xiz-tur-cards2{
     width: 100%;
-    background-color: aqua;
+    background-color: #1CB0B4;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding: 20px 0;
     justify-content: space-around;
     gap: 2rem;
     border-radius: 20px;
 }
 .xiz-tur-cards2 .card2-image{
-    width: 500px;
-    height: 400px;
+    width: 550px;
+    height: 500px;
 }
 .xiz-tur-cards2 .card2-image img{
     width: 100%;
@@ -64,46 +64,71 @@
     border-radius: 20px;
 }
 .xiz-tur-cards2 .card2-items{
-    width: 30%;
-    display: grid;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
     height: 400px;
-    background-color: #fff;
     padding: 20px;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .xiz-tur-cards2 .card2-items .card2-title{
     display: grid;
     gap: 1rem;
 }
 .xiz-tur-cards2 .card2-items .card2-title span{
-    font-size: 2rem;
-    color: #555;
-    font-weight: 600;
-}
-.xiz-tur-cards2 .card2-items .card2-title .card2-icon{
-    font-size: 3rem;
-    color: #000;
-    border-radius: 50%;
+    font-size: 2.5rem;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 .xiz-tur-cards2 .card2-items .card2-button button{
-    width: 100%;
-    padding: 10px 20px;
-    background-color: #000;
-    color: #fff;
     font-size: 1.5rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
     transition: 0.3s;
+    width: 200px;
+    padding: 15px 0;
 }
 .xiz-tur-cards2 .card2-items .card2-button button:hover{
     background-color: #fff;
     color: #000;
     border: 1px solid #000;
+}
+@media screen and (max-width:1024px) {
+    .xiz-tur-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .xiz-tur-cards2 .card2-image{
+        width: 350px;
+        height: 300px;
+    }
+    .xiz-tur-cards2{
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .xiz-tur-cards2 .card2-items{
+        width: 50%;
+        gap: 1rem;
+    }
+    .xiz-tur-cards2 .card2-items .card2-title span{
+        font-size: 2rem;
+    }
+    .xiz-tur-cards2 .card2-items .card2-button button{
+        width: 150px;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:960px) {
+    .xiz-tur-cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .xiz-tur-cards2 .card2-image{
+        display: none;
+    }
 }
 @media screen and (max-width: 768px) {
     .xiz-tur-title h1{
@@ -112,13 +137,9 @@
     .xiz-tur-cards{
         gap: 1rem;
     }
-    .xiz-tur-card{
-        width: 100%;
-        margin: 0 auto;
-        /* min-height: 400px; */
-    }
     .xiz-tur-cards2 .card2-items{
-        width: 40%;
+        width: 60%;
+        justify-content: space-around;
     }
     .xiz-tur-cards2 .card2-items .card2-title span{
         font-size: 1.5rem;
@@ -129,9 +150,6 @@
     .xiz-tur-cards2 .card2-items .card2-button button{
         font-size: 1.2rem;
     }
-    .xiz-tur-cards2 .card2-image{
-        display: none;
-    }
 }
 @media screen and (max-width:480px) {
     .xiz-tur-title h1{
@@ -139,7 +157,6 @@
     }
     .xiz-tur-cards2 .card2-items{
         width: 80%;
-        max-height: 300px;
     }
     .xiz-tur-cards2 .card2-items .card2-title span{
         font-size: 1.2rem;

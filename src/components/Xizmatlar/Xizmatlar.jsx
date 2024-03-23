@@ -1,10 +1,9 @@
 import React from "react";
 import "./Xizmatlar.css";
-import Hasharotlar from "../../images/hasharot3.webp";
 import { useTranslation } from "react-i18next";
-import Image1 from "../../images/xizmat-1.jpg"
-import Image2 from "../../images/xizmat-2.jpg"
-import Image3 from "../../images/xizmat-3.jpg"
+import Image1 from "../../images/dizinfeksiya-bakteriya.png"
+import Image2 from "../../images/dezinyeksiya-qongiz.png"
+import Image3 from "../../images/derazatsiya-sichqon.png"
 
 const Xizmatlar = () => {
   const {t} = useTranslation()

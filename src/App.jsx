@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="container">
       <Navbar />
-      <Main />
+       <Main />
       <About />
       <Xizmatlar />
       <XizmatTuri />

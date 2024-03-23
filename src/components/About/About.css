@@ -1,200 +1,252 @@
 .about-container{
+    display: flex;
+    flex-direction: column;
     padding: 20px;
-    display: grid;
     gap: 2rem;
 }
 .about-title h1{
     font-size: 3rem;
-    font-weight: 600;
 }
 .about-cards{
     display: flex;
     justify-content: space-between;
-    gap: 2rem;
-    margin-top: 50px;
+    align-items:center;
 }
 .about-card{
-    width: 30%;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: flex-start;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 10px 0 10px 20px;
+    min-height: 300px;
     gap: 1rem;
+    border-radius: 10px;
 }
-.card-icon{
-    font-size: 3rem;
-    color: #13bdc3;
+.about-card .card-icon{
+    font-size: 4rem;
+    color: #344BDB;
 }
-.card-title{
+.about-card .card-title{
     font-size: 2rem;
-    font-weight: 600;
+    width: 60%;
 }
-.card-descr{
-    font-size: 1.5rem;
-    font-weight: 500;
+.about-card .card-descr{
+    font-size: 1.2rem;
+    width: 80%;
     color: #555;
 }
-.about-card:hover{
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
 .about-cards-two{
     display: flex;
-    justify-content: space-between;
-    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-end;
     position: relative;
 }
 .about-card-two{
-    position: absolute;
-    top: 20%;
-    left: 40%;
-    width: 300px;
-    padding: 20px;
-    border-radius: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: flex-start;
     gap: 1rem;
-    z-index: 999;
-}
-.about-card-two a{
-    text-decoration: none;
-}
-.about-card-two a button{
-    width: 100%;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    background-color: #13bdc3;
-    color: #fff;
-    font-size: 1.5rem;
-    font-weight: 600;
     border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    position: absolute;
+    padding: 20px;
+    z-index: 1;
 }
-.about-card-two h1{
-    font-size: 1.8rem;
-    font-weight: 600;
+.about-card-two .card-title-two{
+    font-size: 3rem;
+    width: 80%;
+    color: #fff;
 }
 .about-card-two p{
     font-size: 1.5rem;
-    font-weight: 500;
-    color: #555;
+    width: 70%;
+    color: #fff;
+}
+.about-card-two a button{
+    width: 180px;
+    border: none;
+    padding: 15px 0;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #344BDB;
+    transition: all 0.3s ease;
+    text-align: center;
 }
 .about-img-container{
-    width: 1200px;
-    margin: 0 auto;
-    height: 500px;
+    width: 100%;
 }
 .about-img-container img{
     width: 100%;
-    height: 100%;
-    border-radius: 20px;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+
 }
-@media screen and (max-width:768px) {
+
+@media screen and (max-width:1024px) {
+    .about-title h1{
+        font-size: 2.5rem;
+    }
     .about-cards{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
         gap: 2rem;
     }
     .about-card{
         width: 100%;
+        min-height: 200px;
+    }
+    .about-card .card-icon{
+        font-size: 3rem;
+    }
+    .about-card .card-title{
+        width: 30%;
+        letter-spacing: 2px;
+    }
+    .about-card .card-descr{
+        width: 100%;
+    }
+    .about-cards-two{
+        align-items: center;
+        overflow-x: hidden;
     }
     .about-card-two{
-        display: grid;
-        /* grid-template-columns: 1fr; */
+        right: 15%;
+        overflow-x: hidden;
     }
-    .about-card-two{
-        position: absolute;
-        top: 20%;
-        left: 25%;
-        margin: 0 auto;
-    }
-    .about-card-two h1{
-        font-size: 1.5rem;
+    .about-card-two .card-title-two{
+        width: 100%;
+        font-size: 2.5rem;
     }
     .about-card-two p{
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
-    .about-img-container{
-        width: 100%;
-        height: 400px;
+}
+@media screen and (max-width:960px) {
+    .about-title h1{
+        font-size: 2rem;
+    }
+    .about-card .card-title{
+        font-size: 1.5rem;
+        width: 40%;
+    }
+    .about-card .card-descr{
+        font-size: 1rem;
+        width: 90%;
+    }
+    .about-card-two{
+        /* right: auto; */
+        top: 20%;
+        /* left:25%; */
+        right: -10%;
+        width: 60%;
+        /* margin-top: 30px; */
+    }
+    .about-card-two a button{
+        width: 150px;
+        padding: 10px 0;
+    }
+    .about-card-two .card-title-two{
+        font-size: 2rem;
     }
     .about-img-container img{
-        width: 100%;
-        height: 100%;
-        border-radius: 20px;
+        height: 500px;
+        object-fit: none;
+    }
+}
+@media screen and (max-width:768px) {
+    .about-title h1{
+        font-size: 1.8rem;
+    }
+    .about-card .card-title{
+        font-size: 1.3rem;
+        width: 50%;
+    }
+    .about-card .card-descr{
+        font-size: 1rem;
+        width: 90%;
+    }
+    .about-card-two{
+        right: -2%;
+        top: 25%;
+    }
+    .about-card-two p{
+        font-size: 1.3rem;
+    }
+    .about-card-two a button{
+        width: 100px;
+        padding: 5px;
     }
 }
 @media screen and (max-width:480px) {
     .about-title h1{
-        font-size: 2rem;
-    }
-    .about-card{
-        padding: 10px;
-    }
-    .card-icon{
-        font-size: 2rem;
-    }
-    .card-title{
         font-size: 1.5rem;
     }
-    .card-descr{
+    .about-card{
+        padding: 10px 0 10px 10px;
+    }
+    .about-card .card-icon{
+        font-size: 3rem;
+    }
+    .about-card .card-title{
         font-size: 1.2rem;
+        width: 50%;
+    }
+    .about-card .card-descr{
+        font-size: 1rem;
+        width: 90%;
     }
     .about-card-two{
-        position: absolute;
-        top: 10%;
-        left: 25%;
-        width: 200px;
+        top: 15%;
+        width: 80%;
+        right: 10%;
     }
-    .about-card-two h1{
-        font-size: 1.2rem;
-    }
-    .about-card-two p{
-        font-size: 1rem;
-    }
-    .about-card-two button{
-        padding: 5px 10px;
-    }
-    .about-img-container{
+    .about-img-container img{
         width: 100%;
-        height: 300px;
+        height: 400px;
     }
 }
 @media screen and (max-width:380px) {
+    .about-title h1{
+        font-size: 1.3rem;
+    }
     .about-card{
-        padding: 10px;
+        padding: 10px 0 10px 10px;
     }
-    .card-icon{
-        font-size: 1.5rem;
+    .about-card .card-icon{
+        font-size: 2.5rem;
     }
-    .card-title{
-        font-size: 1.2rem;
+    .about-card .card-title{
+        font-size: 1rem;
+        width: 50%;
     }
-    .card-descr{
-        font-size: 0.8rem;
+    .about-card .card-descr{
+        font-size: 0.9rem;
+        width: 90%;
     }
     .about-card-two{
-        position: absolute;
-        top: 10%;
-        left: 25%;
-        width: 150px;
+        top: 20%;
     }
-    .about-card-two h1{
-        font-size: 1rem;
+    .about-card-two .card-title-two{
+        font-size: 1.3rem;
     }
     .about-card-two p{
         font-size: 0.8rem;
     }
-    .about-card-two button{
-        padding: 5px 10px;
-        font-size: 0.8rem;
+    .about-card-two a button{
+        width: 100px;
+        font-size: 15px;
+    }
+    .about-img-container img{
+        height: 300px;
+        object-fit: fill;
     }
 }

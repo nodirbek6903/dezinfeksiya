@@ -3,7 +3,7 @@ import { BsLightningCharge } from "react-icons/bs";
 import { MdHandshake } from "react-icons/md";
 import { SlBadge } from "react-icons/sl";
 import "./About.css";
-import AboutImage from "../../images/odamlar2.webp"
+import AboutImage from "../../images/about-dez-2.jpg"
 import { useTranslation } from "react-i18next";
 
 const About = () => {
@@ -42,7 +42,7 @@ const About = () => {
           <h1 className="card-title-two" data-aos="fade-left">{t("about-card2-title")}</h1>
           <p>{t("about-card2-description")}</p>
           <a href="tel:+998903646903">
-          <button data-aos="fade-left">{t("about-card2-button")}</button>
+          <button>{t("about-card2-button")}</button>
           </a>
         </div>
         <div className="about-img-container">
