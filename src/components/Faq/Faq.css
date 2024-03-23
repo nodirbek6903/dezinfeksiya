@@ -3,6 +3,7 @@
   display: grid;
   gap: 3rem;
   position: relative;
+  margin: 0 auto;
 }
 .faq {
   display: flex;
@@ -92,7 +93,8 @@
     outline: none;
     font-size: 1.5rem;
     color: #fff;
-    background-color: #000;
+    background-color: #3498DB;
+    text-align: center;
     cursor: pointer;
     border-radius: 5px;
     width: 100%;
@@ -135,6 +137,10 @@
     .faq-cards .faq-card .faq-questions h2{
         letter-spacing: 0px;
         font-size: 1.5rem;
+    }
+    .faq-cards2 .faq-card2{
+        left: 20%;
+        top: 30%;
     }
 }
 
@@ -245,7 +251,7 @@
         font-size: 1.3rem;
     }
     .faq-cards .faq-card .faq-questions h2{
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
     .faq-cards .faq-card .faq-questions .icons{
         width: 25px;
@@ -255,10 +261,14 @@
         font-size: 0.8rem;
     }
     .faq-cards .faq-card .faq-answers p{
-        font-size: 0.7rem;
+        font-size: 0.5rem;
     }
     .faq-cards2 .faq-card2{
-        max-width: 250px;
+        width: 80%;
+        left: 10%;
+        top: 20%;
+    }.faq-cards2 .faq-image2{
+        max-height: 400px;
     }
     .faq-card2 .faq-title2 h2{
         font-size: 1rem;

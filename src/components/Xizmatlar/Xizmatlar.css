@@ -2,6 +2,7 @@
     padding: 20px;
     display:grid;
     gap: 2rem;
+    margin: 0 auto;
 }
 .xiz-title h1{
     font-size: 4rem;

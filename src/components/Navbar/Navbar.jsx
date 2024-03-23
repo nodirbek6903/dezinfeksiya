@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import Logo from "../../images/dezinfaction-logo.png";
 import { FaBars } from "react-icons/fa6";
@@ -7,7 +7,25 @@ import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [openIcon, setOpenIcon] = useState(false);
+  const [shadow,setShadow] = useState(false)
   const {t, i18n} = useTranslation()
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if(window.scrollY > 0){
+        setShadow(true)
+      }
+      else{
+        setShadow(false)
+      }
+    }
+
+    window.addEventListener("scroll",handleScroll)
+    return () => {
+      window.removeEventListener("scroll",handleScroll)
+    }
+  },[])
 
   const changeLanguage = (e) => {
     i18n.changeLanguage(e.target.value)
@@ -17,7 +35,7 @@ const Navbar = () => {
     setOpenIcon(!openIcon);
   };
   return (
-    <div className="nav-container">
+    <div className={`nav-container ${shadow ? "shadow" : ""}`}>
       <div className="logo-container">
         <a href="#"><img src={Logo} alt="Logo" /></a>
       </div>

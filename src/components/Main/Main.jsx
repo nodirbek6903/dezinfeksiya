@@ -1,5 +1,5 @@
 import React from "react";
-import MainImg from "../../images/odamlar.webp";
+import MainImg from "../../images/main-12.png";
 import "./Main.css";
 import { useTranslation } from "react-i18next";
 
@@ -16,7 +16,7 @@ const Main = () => {
           </p>
         </div>
         <div className="left-btn" data-aos="fade-right">
-          <a href="tel:+998903646903">
+          <a href="#contact">
             <button>{t("main-button")}</button>
           </a>
         </div>

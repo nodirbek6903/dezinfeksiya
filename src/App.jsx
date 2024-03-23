@@ -6,7 +6,6 @@ import Xizmatlar from './components/Xizmatlar/Xizmatlar';
 import Faq from './components/Faq/Faq';
 import Footer from "./components/Footer/Footer";
 import AOS from "aos"
-
 function App() {
   AOS.init()
   return (
