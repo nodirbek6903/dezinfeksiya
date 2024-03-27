@@ -1,15 +1,19 @@
 .nav-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  margin: 0 auto;
+  height: 100px;
+  background-color: #fff;
+}
+.nav-container .container{
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999999;
-  margin: 0 auto;
-  height: 80px;
-  background-color: #fff;
+  height: 100%;
 }
 .nav-container.shadow{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -17,16 +21,12 @@
 }
 .logo-container {
   width: 150px;
-  height: 80px;
+  height: 100px;
 }
 .logo-container img{
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-.logo-container img {
-  width: 100%;
-  height: 100%;
+  /* object-fit: cover; */
 }
 .item-container {
   display: flex;
@@ -81,32 +81,6 @@
     min-width: 30%;
     justify-content: space-evenly;
   }
-  .bars-icon {
-    display: block;
-    font-size: 25px;
-    right: 10px;
-    /* position: absolute; */
-    z-index: 999;
-    color: #000;
-  }
-  .item-container .nav-items {
-    position: absolute;
-    top: 0;
-    right: -100%;
-    display: none;
-    flex-direction: column;
-    height: 100vh;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    width: 30%;
-    align-items: center;
-    justify-content: space-around;
-    transition: 1s all ease-in;
-  }
-  .item-container .nav-items.active {
-    right: 0;
-    display: flex;
-  }
   .language-items {
     font-size: 20px;
   }
@@ -117,11 +91,31 @@
     width: 80px;
     height: 50px;
   }
+  .bars-icon {
+    display: block;
+    font-size: 25px;
+    right: 10px;
+    z-index: 999;
+    color: #000;
+  }
   .item-container .nav-items{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    display: none;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 50%;
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    transition: 1s all ease-in;
+  }
+  .item-container .nav-items.active {
+    right: 0;
+    display: flex;
   }
   .item-container .nav-items a {
     font-size: 25px;
@@ -142,7 +136,7 @@
     padding: 0 20px;
   }
 }
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 380px) {
   .item-container .nav-items {
     width: 70%;
     gap: 2rem;

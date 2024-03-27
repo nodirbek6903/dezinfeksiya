@@ -40,8 +40,8 @@ const About = () => {
       <div className="about-cards-two">
         <div className="about-card-two" data-aos="fade-left">
           <h1 className="card-title-two" data-aos="fade-left">{t("about-card2-title")}</h1>
-          <p>{t("about-card2-description")}</p>
-          <a href="tel:+998903646903">
+          <p data-aos="fade-left">{t("about-card2-description")}</p>
+          <a href="tel:+998903646903" data-aos="fade-left">
           <button>{t("about-card2-button")}</button>
           </a>
         </div>

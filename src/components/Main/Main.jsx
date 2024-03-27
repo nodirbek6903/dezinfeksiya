@@ -8,14 +8,14 @@ const Main = () => {
   const {t} = useTranslation()
   return (
     <div className="main-container" id="main">
-      <div className="main-left-section" data-aos="fade-right">
+      <div className="main-left-section">
         <div className="left-title">
-          <h1 data-aos="fade-right">{t("main-title")}</h1>
-          <p data-aos="fade-right">
+          <h1 data-aos="fade-right" data-aos-duration="1000">{t("main-title")}</h1>
+          <p data-aos="fade-right" data-aos-duration="1000">
             {t("main-description")}
           </p>
         </div>
-        <div className="left-btn" data-aos="fade-right">
+        <div className="left-btn" data-aos="fade-right" data-aos-duration="1500">
           <a href="#contact">
             <button>{t("main-button")}</button>
           </a>

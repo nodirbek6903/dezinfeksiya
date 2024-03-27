@@ -41,9 +41,10 @@ const Faq = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     sendTelegram();
+
     toast.success(
       `${firstname} ma'lumotlaringiz muvaffaqqiyatli tarzda botga yuborildi!!!`,
-      { position: "bottom-right" }
+      { position: "top-right"}
     );
     setFirstname("");
       setPhoneNumber("");

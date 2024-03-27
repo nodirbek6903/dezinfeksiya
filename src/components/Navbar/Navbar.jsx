@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
-import Logo from "../../images/dezinfaction-logo.png";
+import Logo from "../../images/dez-logo14.webp";
 import { FaBars } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
@@ -36,15 +36,16 @@ const Navbar = () => {
   };
   return (
     <div className={`nav-container ${shadow ? "shadow" : ""}`}>
+      <div className="container">
       <div className="logo-container">
         <a href="#"><img src={Logo} alt="Logo" /></a>
       </div>
       <div className="item-container">
         <div className={`nav-items ${openIcon ? "active" : ""}`}>
-          <a href="#">{t("nav-item1")}</a>
-          <a href="#about">{t("nav-item2")}</a>
-          <a href="#xizmatlar">{t("nav-item3")}</a>
-          <a href="#faq">{t("nav-item4")}</a>
+          <a href="#" onClick={() => handleOpenIcon()}>{t("nav-item1")}</a>
+          <a href="#about" onClick={() => handleOpenIcon()}>{t("nav-item2")}</a>
+          <a href="#xizmatlar" onClick={() => handleOpenIcon()}>{t("nav-item3")}</a>
+          <a href="#faq" onClick={() => handleOpenIcon()}>{t("nav-item4")}</a>
         </div>
         <select name="languages" onChange={changeLanguage} id="" className="language-items">
           <option value="ru">Русский</option>
@@ -55,6 +56,7 @@ const Navbar = () => {
         ) : (
           <FaBars className="bars-icon" onClick={() => handleOpenIcon()} />
         )}
+      </div>
       </div>
     </div>
   );

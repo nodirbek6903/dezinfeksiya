@@ -15,7 +15,7 @@ const Xizmatlar = () => {
       </div>
       <hr />
       <div className="xiz-cards">
-        <div className="xiz-card">
+        <div className="xiz-card" data-aos="fade-right">
           <div className="card-image">
             <img src={Image1} alt="Images" />
           </div>
@@ -26,7 +26,7 @@ const Xizmatlar = () => {
               </p>
             </div>
         </div>
-        <div className="xiz-card">
+        <div className="xiz-card" data-aos="fade-right">
           <div className="card-image">
             <img src={Image2} alt="Images" />
           </div>
@@ -39,7 +39,7 @@ const Xizmatlar = () => {
               </p>
             </div>
         </div>
-        <div className="xiz-card">
+        <div className="xiz-card" data-aos="fade-right">
           <div className="card-image">
             <img src={Image3} alt="Images" />
           </div>

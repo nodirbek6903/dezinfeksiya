@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Footer.css"
-import FooterLogo from "../../images/dezinfaction-logo.png"
+import FooterLogo from "../../images/dez-logo14.webp"
 import { IoLocation } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
 import { GrLinkNext } from "react-icons/gr";

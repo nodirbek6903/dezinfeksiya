@@ -130,7 +130,8 @@
 }
 @media screen and (max-width:380px) {
     .xiz-cards .xiz-card .card-image{
-        width: 50%;
+        width: 130px;
+        height: 130px;
     }
     .xiz-card .card-items{
         width: 100%;
