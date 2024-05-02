@@ -28,7 +28,9 @@ const Navbar = () => {
   },[])
 
   const changeLanguage = (e) => {
-    i18n.changeLanguage(e.target.value)
+    const selectedLanguage = e.target.value
+    localStorage.setItem("language",selectedLanguage)
+    i18n.changeLanguage(selectedLanguage)
   }
 
   const handleOpenIcon = () => {
@@ -47,7 +49,7 @@ const Navbar = () => {
           <a href="#xizmatlar" onClick={() => handleOpenIcon()}>{t("nav-item3")}</a>
           <a href="#faq" onClick={() => handleOpenIcon()}>{t("nav-item4")}</a>
         </div>
-        <select name="languages" onChange={changeLanguage} id="" className="language-items">
+        <select name="languages" onChange={changeLanguage} value={localStorage.getItem("language")} id="" className="language-items">
           <option value="ru">Русский</option>
           <option value="uz">O'zbekcha</option>
         </select>
